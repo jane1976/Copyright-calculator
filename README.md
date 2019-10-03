@@ -47,7 +47,7 @@ rights.php - code to calculate values
 
 rights.css - design the webpage layout
 
-access - where stored the use of this script (date/time, IP, Query, Result)
+access.log - where stored the use of this script (date/time, IP, Query, Result)
   
 ## Use 
 
