@@ -1,0 +1,49 @@
+html {
+  background: url(bg.jpg) no-repeat top center fixed;
+  background-color: #dbe9f1;
+  background-attachment: fixed;
+  background-size: 1600px 1000px, cover;
+  height: 50%;
+  overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.debug {
+  line-height: 1.5em;
+  font-family: Courier New;
+}
+
+h1, h3, h4, header .btn {
+  font-weight: 700;
+}
+
+h1 {
+  margin: 100px 100px 20px;
+  font-size: 1.6rem;
+}
+
+h3 {
+  margin: 100px 40px 20px;
+  font-family: Georgia;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h3:after {
+  content: '';
+  display: block;
+  width: 10%;
+  padding-top: 5px;
+  border-bottom: 3px solid whitesmoke;
+}
+
