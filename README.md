@@ -47,6 +47,8 @@ rights.php - code to calculate values
 
 rights.css - design the webpage layout
 
+Sierra.php - Sierra REST-API connector made by Sean Watkins <slwatkins@uh.edu>
+
 access.log - where stored the use of this script (date/time, IP, Query, Result)
   
 ## Use 
