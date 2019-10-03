@@ -14,7 +14,9 @@ The goal of the calculator is to automatically calculate the date when the term 
 
 Integrating to Sierra WebPAC Pro you must install additional javascript to rewrite record URL and make link to this rights.php code.
 
-1. create link to calculator, modify file ../screens/bib_display.html in Sierra
+1. create link to calculator
+
+Modify file ../screens/bib_display.html in Sierra
 ```
 <!-- show licese button or link -->
 <span id="license"  style="margin-left: 20px;"><a href="https://www.elnet.ee/estermeil/rights.php">View Rights</a></span><script>call_license();</script>
@@ -49,7 +51,7 @@ access - where stored the use of this script (date/time, IP, Query, Result)
   
 ## Use 
 
-[http://your.server.com/rights.php?URL=[Sierra server and system record number]&debug]
+(http://your.server.com/rights.php?URL=[Sierra_server_and_system_with_record_number]&debug)
 
 Code uses URL to get ID/ISBN and 3 types of parameters
 - &xml - returns XML result (for M2M)
@@ -59,9 +61,12 @@ Code uses URL to get ID/ISBN and 3 types of parameters
 ## Examples
 
 1. Direct URL to working skript 
+
 [https://www.elnet.ee/estermeil/rights.php?URL=https://www.ester.ee/record=b5243163~S1*est]
 
-2. XML query: [https://www.elnet.ee/estermeil/rights.php?URL=https://www.ester.ee:444/record=b1355887~S1&lang=en&xml]
+2. XML query:
+
+[https://www.elnet.ee/estermeil/rights.php?URL=https://www.ester.ee:444/record=b1355887~S1&lang=en&xml]
 XML response:
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -73,7 +78,9 @@ XML response:
 </metadata>
 ```
 
-3. Query with debug info: [https://www.elnet.ee/estermeil/rights.php?URL=https://www.ester.ee:444/record=b1355887~S1&debug]
+3. Query with debug info: 
+
+[https://www.elnet.ee/estermeil/rights.php?URL=https://www.ester.ee:444/record=b1355887~S1&debug]
 
 ## Authors
 
