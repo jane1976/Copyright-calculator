@@ -2,26 +2,28 @@
 
 ## Getting Started
 
-The goal of the calculator is to automatically calculate the date when the term of copyright of the work will expire and the work will be made freely available for the public. Application uses the Sierra REST API in order to send queries and get the data from the ESTER (The online catalogue ESTER is the shared catalogue of the ELNET Consortium member libraries (containing information on all documents acquired by these libraries). The catalogue also contains data on the holdings of university college libraries and special libraries.)
+The goal of the calculator is to automatically calculate the date when the term of copyright of the work will expire and the work will be made freely available for the public. The application uses the Sierra REST API in order to send queries and to get the data from the Sierra, a database (in other words, an integrated library system) the e-catalogue ESTER runs on. 
+
+ESTER is a shared e-catalogue of 19 Estonian libraries who have joind into consortia. E-catalogue contains information on all publications and documents acquired by these libraries. The e-catalogue also contains the data on the holdings of libraries.
 
 ### Prerequisites
 
-1. Some server where you can run .php code
+1. A server where you can run .php code.
 
-2. To access Sierra, the API key and password (must be added to file rights.php)
+2. To access Sierra, the API key and password (must be added to the file rights.php)
 
-### Installing and Integrating
+### Installing and integrations
 
-Integrating to Sierra WebPAC Pro you must install additional javascript to rewrite record URL and make link to this rights.php code.
+Integrating to Sierra WebPAC Pro, you must install additional javascript to rewrite the record URL and to make a link to the code 'rights.php'.
 
-1. create link to calculator
+1. Create a link to the Calculator
 
 Modify file ../screens/bib_display.html in Sierra
 ```
 <!-- show licese button or link -->
 <span id="license"  style="margin-left: 20px;"><a href="https://www.elnet.ee/estermeil/rights.php">View Rights</a></span><script>call_license();</script>
 ```
-2. add javascript to HTML header
+2. Add javascript to HTML header
 ```
 //redirect to rights script
 function call_license(){
@@ -37,7 +39,7 @@ document.getElementById('license').innerHTML = new_url;
 ```
 
 See Ex. [https://www.ester.ee:444/record=b2699306]
-(Left corner "View Rights")
+(In the left corner: "View Rights")
 
 ## Calculator Deployment
 
