@@ -4,7 +4,7 @@
 
 The goal of the calculator is to automatically calculate the date when the term of copyright of the work will expire and the work will be made freely available for the public. The application uses the Sierra REST API in order to send queries and to get the data from the Sierra, a database (in other words, an integrated library system) the e-catalogue ESTER runs on. 
 
-ESTER is a shared e-catalogue of 19 Estonian libraries who have joind into consortia. E-catalogue contains information on all publications and documents acquired by these libraries. The e-catalogue also contains the data on the holdings of libraries.
+For additional information about the project, see: Wiki: https://github.com/jane1976/EBS-project_team-1/wiki
 
 ### Prerequisites
 
